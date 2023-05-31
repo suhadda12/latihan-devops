@@ -1,4 +1,0 @@
-- name: This command will check uptime server
-  hosts: all
-  shell:
-    cmd: uptime
