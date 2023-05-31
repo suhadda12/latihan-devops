@@ -1,6 +1,6 @@
 ---
 - name: Check Disk Space Usage
-  hosts: all
+  hosts: podman.local.dev
   tasks:
           - name: Disk usage Linux
             command: df -Th
