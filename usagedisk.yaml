@@ -2,8 +2,5 @@
 - name: Check Disk Space Usage
   hosts: all
   tasks:
-          - name: Disk usage from command module
+          - name: Disk usage Linux
             command: df -Th
-            register: space
-          - debug:
-                  var: space.stdout_lines
