@@ -1,0 +1,24 @@
+---
+- name: Install podman
+  hosts: all
+  become: yes
+  tasks:
+    - name: Install Podman package
+      package:
+        name: podman
+        state: present
+    - name: Start a container
+      command: podman run --name mycontainer -d nginx:latest
+      register: podman_output
+
+    - name: Display Podman output
+      debug:
+        var: podman_output.stdout
+
+    - name: Check container status
+      command: podman ps -a
+      register: container_status
+
+    - name: Display container status
+      debug:
+        var: container_status.stdout_lines
