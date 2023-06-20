@@ -1,0 +1,6 @@
+---
+- name: pull docker supermario
+  hosts: podman-master.local.dev
+  tasks:
+          - name: pull docker supermario
+            command: podman pull pengbai/docker-supermario
