@@ -3,4 +3,4 @@
   hosts: podman-master.local.dev
   tasks:
           - name: build podman duckhunt
-            command: podman build -t stardew --file stardew-multiplayer-docker/docker
+            command: podman build -t stardew --file stardew-multiplayer-docker/docker/Dockerfile
