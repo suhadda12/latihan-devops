@@ -1,0 +1,6 @@
+---
+- name: Clone git repo stardew
+  hosts: podman-master.local.dev
+  tasks:
+          - name: clone repo stardew
+            command: git clone https://github.com/printfuck/stardew-multiplayer-docker
