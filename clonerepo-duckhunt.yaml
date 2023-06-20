@@ -1,0 +1,6 @@
+---
+- name: Clone git repo duckhunt
+  hosts: podman-master.local.dev
+  tasks:
+          - name: clone repo duckhunt
+            command: git clone https://github.com/nutta3/DuckHunt-JS-K8s.git
