@@ -3,4 +3,4 @@
   hosts: podman-master.local.dev
   tasks:
           - name: build podman duckhunt
-            command: podman build -t duckhunt-js:v1 .
+            command: podman build -t duckhunt-js:v1 --DuckHunt-JS-K8s/Dockerfile
