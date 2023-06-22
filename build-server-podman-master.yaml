@@ -1,0 +1,6 @@
+---
+- name: Build server podman master server
+  hosts: podman-master.local.dev
+  tasks:
+          - name: build server podman master server
+            command: dnf update -y;dnf install git -y;dnf module install -y container-tools;dnf install cockpit cockpit-podman -y;systemctl reboot
