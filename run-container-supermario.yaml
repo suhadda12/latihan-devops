@@ -1,0 +1,6 @@
+---
+- name: Run Container Image supermario
+  hosts: podman-master.local.dev
+  tasks:
+          - name: Run Container Image supermario
+            command: podman run -d --name supermario -p 8600:8080 pengbai/docker-supermario
